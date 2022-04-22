@@ -5,7 +5,7 @@ pipeline {
         stage('Dependencies') {
             steps {
                 echo 'Retrieving dependencies..'
-				sh 'npm install'
+				sh 'cd frontend/ && npm install'
                 echo 'Installation completed successfully.'
             }
         }
@@ -21,7 +21,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building project..'
-				sh 'npm run build'
+				sh 'cd frontend/ && npm run build'
                 echo 'Build completed successfully.'
             }
         }
