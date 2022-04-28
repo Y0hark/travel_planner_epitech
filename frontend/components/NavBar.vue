@@ -2,7 +2,7 @@
 	<div>
 		<v-toolbar dense>
 			<v-btn id="home-link" color="primary" text nuxt to="/">
-				Globe Toddler</v-btn
+				Let's Plan It</v-btn
 			>
 
 			<v-spacer></v-spacer>
