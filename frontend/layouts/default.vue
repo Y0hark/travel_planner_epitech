@@ -1,5 +1,6 @@
 <template>
 	<v-app dark>
+		<nav-bar />
 		<v-main>
 			<v-container>
 				<Nuxt />
@@ -9,7 +10,9 @@
 </template>
 
 <script>
+import NavBar from '../components/NavBar.vue'
 export default {
-  name: 'DefaultLayout'
+	components: { NavBar },
+	name: 'DefaultLayout',
 }
 </script>
