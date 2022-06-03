@@ -73,6 +73,33 @@ export default {
 				'Kentucky',
 				'Louisiana',
 			],
+			response: [
+				{ city: 'Alabama', country: 'USA', price: '$100' },
+				{ city: 'Alaska', country: 'USA', price: '$200' },
+				{ city: 'Arizona', country: 'USA', price: '$300' },
+				{ city: 'Arkansas', country: 'USA', price: '$400' },
+				{ city: 'California', country: 'USA', price: '$500' },
+				{ city: 'Colorado', country: 'USA', price: '$600' },
+				{ city: 'Connecticut', country: 'USA', price: '$700' },
+				{ city: 'Delaware', country: 'USA', price: '$800' },
+				{ city: 'Florida', country: 'USA', price: '$900' },
+				{ city: 'Georgia', country: 'USA', price: '$1000' },
+				{ city: 'Hawaii', country: 'USA', price: '$1100' },
+				{ city: 'Idaho', country: 'USA', price: '$1200' },
+				{ city: 'Illinois', country: 'USA', price: '$1300' },
+				{ city: 'Indiana', country: 'USA', price: '$1400' },
+				{ city: 'Iowa', country: 'USA', price: '$1500' },
+				{ city: 'Kansas', country: 'USA', price: '$1600' },
+				{ city: 'Kentucky', country: 'USA', price: '$1700' },
+				{ city: 'Louisiana', country: 'USA', price: '$1800' },
+				{ city: 'Maine', country: 'USA', price: '$1900' },
+				{ city: 'Maryland', country: 'USA', price: '$2000' },
+				{ city: 'Massachusetts', country: 'USA', price: '$2100' },
+				{ city: 'Michigan', country: 'USA', price: '$2200' },
+				{ city: 'Minnesota', country: 'USA', price: '$2300' },
+				{ city: 'Mississippi', country: 'USA', price: '$2400' },
+				{ city: 'Missouri', country: 'USA', price: '$2500' },
+			],
 			selected: '',
 		}
 	},
@@ -80,9 +107,14 @@ export default {
 		search() {
 			try {
 				if (this.selected != '') {
+					// renvoie une liste de tous les voyages pour la destination selectionnée
+					const results = this.response.filter(
+						(item) => item.city === this.selected
+					)
+
 					this.$router.push({
 						name: 'results',
-						params: { location: this.selected },
+						params: { results: results },
 					})
 				}
 			} catch (error) {
