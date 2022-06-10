@@ -1,5 +1,3 @@
-// TODO Samuel GALIERE : this test is not working -> reason: API URL remains to be defined
-
 // this is a user journey test
 // it will test how the website behaves when a user makes a basic request
 describe("User makes a research just by location", () => {
