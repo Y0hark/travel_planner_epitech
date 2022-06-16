@@ -108,13 +108,18 @@ export default {
 			try {
 				if (this.selected != '') {
 					// renvoie une liste de tous les voyages pour la destination selectionnée
-					const results = this.response.filter(
+					const apiResultsArray = this.response.filter(
 						(item) => item.city === this.selected
+					)
+
+					// creation des variables de stockage des données dans le localStorage
+					localStorage.setItem(
+						'apiResultsArray',
+						JSON.stringify(apiResultsArray)
 					)
 
 					this.$router.push({
 						name: 'results',
-						params: { results: results },
 					})
 				}
 			} catch (error) {
