@@ -52,7 +52,7 @@ export default {
       dark: false,
       themes: {
         light: {
-          primary: '#E9BD15',
+          primary: '#00BBAD',
           accent: '#005249',
           secondary: '#4A8179',
           info: colors.teal.lighten1,
@@ -67,4 +67,3 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
-iugfsef

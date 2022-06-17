@@ -7,6 +7,9 @@
 	</div>
 </template>
 <script>
+
+import ResultComponent from '../../components/ResultComponent.vue'
+
 export default {
 	name: 'detailedPage',
 	data() {
