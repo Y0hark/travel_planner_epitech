@@ -5,6 +5,7 @@
 			v-for="(result, index) in apiResultsArray"
 			:key="index"
 			:result="result"
+			:id="'cardResult-0' + index"
 		></ResultComponent>
 	</div>
 </template>

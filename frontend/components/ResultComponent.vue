@@ -22,7 +22,7 @@ export default {
 		displayResult() {
 			localStorage.setItem('detailedResult', JSON.stringify(this.result))
 			this.$router.push({
-				path: 'results/' + this.result.city,
+				path: 'results/detailedTravel' + this.result.city,
 			})
 		},
 	},
