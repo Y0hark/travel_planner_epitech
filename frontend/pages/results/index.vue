@@ -2,9 +2,10 @@
 	<div>
 		<h2>Results page</h2>
 		<ResultComponent
-			v-for="(result, index) in this.$route.params.results"
+			v-for="(result, index) in apiResultsArray"
 			:key="index"
 			:result="result"
+			:id="'cardResult-0' + index"
 		></ResultComponent>
 	</div>
 </template>
@@ -13,6 +14,13 @@ import ResultComponent from '../../components/ResultComponent.vue'
 export default {
 	components: { ResultComponent },
 	name: 'resultsPage',
+	data() {
+		return {
+			apiResultsArray: localStorage.getItem('apiResultsArray')
+				? JSON.parse(localStorage.getItem('apiResultsArray'))
+				: [],
+		}
+	},
 }
 </script>
 <style>

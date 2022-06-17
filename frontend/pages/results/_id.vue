@@ -11,7 +11,9 @@ export default {
 	name: 'detailedPage',
 	data() {
 		return {
-			result: this.$route.params.result,
+			result: localStorage.getItem('detailedResult')
+				? JSON.parse(localStorage.getItem('detailedResult'))
+				: {},
 		}
 	},
 }

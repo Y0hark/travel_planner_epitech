@@ -1,11 +1,6 @@
 <template>
 	<div>
-		<v-card
-			elevation="2"
-			outlined
-			:to="'results/' + result.city"
-			@click="displayResult"
-		>
+		<v-card elevation="2" outlined @click="displayResult">
 			<v-card-text>
 				<h3>{{ result.city }}</h3>
 				<h4>{{ result.country }}</h4>
@@ -25,11 +20,9 @@ export default {
 	},
 	methods: {
 		displayResult() {
+			localStorage.setItem('detailedResult', JSON.stringify(this.result))
 			this.$router.push({
-				name: '/results/' + this.result.city + '/',
-				params: {
-					result: this.result,
-				},
+				path: 'results/detailedTravel' + this.result.city,
 			})
 		},
 	},
