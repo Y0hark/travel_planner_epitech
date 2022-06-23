@@ -10,9 +10,6 @@
 	</div>
 </template>
 <script>
-
-import ResultComponent from '../../components/ResultComponent.vue'
-
 export default {
 	name: 'detailedPage',
 	data() {
@@ -24,24 +21,19 @@ export default {
 	},
 	methods: {
 		toggleFavorite() {
-			const inFav = JSON.parse(localStorage.getItem('favorite')).includes(
-				this.result.city
-			)
-				? true
-				: false
-			const strFav = JSON.stringify(this.result)
+			// check if favorites is already a localStorage item
+			const fav = JSON.parse(localStorage.getItem('favorites'))
 
 			// if this result is already in the favorite list, remove it
-			if (inFav === true) {
-				const favorites = JSON.parse(localStorage.getItem('favorites'))
-			}
-			// check if fav already exists, and if so, we save the result right after
-			localStorage.getItem('favorites')
-				? localStorage.setItem(
-						'favorites',
-						localStorage.getItem('favorites') + ',' + strFav
-				  )
-				: localStorage.setItem('favorites', strFav)
+			let flag = fav.some((element) => {
+				if (element.name === this.result.name) {
+					fav.splice(fav.indexOf(element), 1)
+					return true
+				}
+			})
+			flag ? true : fav.push(this.result)
+
+			localStorage.setItem('favorites', JSON.stringify(fav))
 		},
 	},
 }
