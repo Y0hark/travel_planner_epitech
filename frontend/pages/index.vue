@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<h1>Travel Planner</h1>
 		<!-- TODO: Samuel GALIERE need more buttons to refine search -->
 		<!-- next version form should look like this ->
 		<v-card>
@@ -23,7 +22,7 @@
 				<v-btn color="primary" @click="search">Search</v-btn>
 			</v-card-actions> 
 		</v-card> -->
-		<v-toolbar dark>
+		<v-toolbar>
 			<v-toolbar-title>Find a wonderful place to got to!</v-toolbar-title>
 			<v-autocomplete
 				id="arrival-location-search-input"

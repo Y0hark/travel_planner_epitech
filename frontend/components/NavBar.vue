@@ -2,7 +2,7 @@
 	<div>
 		<v-toolbar dense>
 			<v-btn id="home-link" color="primary" text nuxt to="/">
-				Let's Plan It</v-btn
+				Travel Planner</v-btn
 			>
 
 			<v-spacer></v-spacer>
