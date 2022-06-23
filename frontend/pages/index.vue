@@ -122,9 +122,14 @@ export default {
 					})
 				}
 			} catch (error) {
-				console.log(error)
+				console.error(error)
 			}
 		},
+	},
+	mounted() {
+		localStorage.getItem('favorites')
+			? true
+			: localStorage.setItem('favorites', JSON.stringify([]))
 	},
 }
 </script>

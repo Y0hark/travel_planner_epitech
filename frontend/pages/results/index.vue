@@ -1,5 +1,4 @@
 <template>
-
 	<div>
 		<h2>Results page</h2>
 		<ResultComponent
@@ -23,7 +22,6 @@ export default {
 		}
 	},
 }
-
 </script>
 <style>
 </style>
