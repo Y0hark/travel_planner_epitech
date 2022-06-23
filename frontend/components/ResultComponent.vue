@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<v-card elevation="2" outlined @click="displayResult">
+		<!-- <v-card elevation="2" outlined @click="displayResult">
 			<v-card-text>
 				<h3 class="Pcolor">{{ result.city }}</h3>
 				<h4 class="Scolor">{{ result.country }}</h4>
@@ -8,7 +8,35 @@
 				 </v-btn>
 				<p class="Price">{{ result.price }}</p>
 			</v-card-text>
-		</v-card>
+		</v-card> -->
+	<v-card>
+            <v-img
+              src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
+              class="white--text align-end"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              height="200px"
+            >
+              <v-card-title v-text="result.city"></v-card-title>
+            </v-img>
+
+            <v-card-actions>
+              <v-spacer></v-spacer>
+
+              <v-btn icon>
+                <v-icon>mdi-heart</v-icon>
+              </v-btn>
+
+              <v-btn icon>
+                <v-icon>mdi-bookmark</v-icon>
+              </v-btn>
+
+              <v-btn icon>
+                <v-icon>mdi-share-variant</v-icon>
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+	
+	
 	</div>
 </template>
 <script>
