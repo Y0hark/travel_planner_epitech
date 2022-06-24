@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<h2>Results page</h2>
 		<ResultComponent
+			class="my-3"
 			v-for="(result, index) in apiResultsArray"
 			:key="index"
 			:result="result"
@@ -11,14 +11,14 @@
 </template>
 <script>
 import ResultComponent from '../../components/ResultComponent.vue'
+import { data } from '../../data/sample/enjoy.json'
+
 export default {
 	components: { ResultComponent },
 	name: 'resultsPage',
 	data() {
 		return {
-			apiResultsArray: localStorage.getItem('apiResultsArray')
-				? JSON.parse(localStorage.getItem('apiResultsArray'))
-				: [],
+			apiResultsArray: data,
 		}
 	},
 }

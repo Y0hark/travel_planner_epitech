@@ -84,6 +84,7 @@
 
 <script>
 import Api from '../services/api.js'
+import { data } from '../data/sample/enjoy.json'
 
 export default {
 	name: 'homePage',
@@ -167,10 +168,15 @@ export default {
 					})
 				} else {
 					if (this.enjoy) {
-						localStorage.setItem(
-							'apiResults',
-							JSON.stringify(await Api.enjoy())
-						)
+						// localStorage.setItem(
+						// 	'apiResults',
+						// 	JSON.stringify(await Api.enjoy())
+						// )
+						localStorage.setItem('apiResults', JSON.stringify(data))
+
+						this.$router.push({
+							name: 'results',
+						})
 					}
 				}
 			} catch (error) {

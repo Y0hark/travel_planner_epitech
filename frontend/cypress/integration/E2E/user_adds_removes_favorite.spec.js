@@ -13,6 +13,8 @@ describe('User can add and remove a travel from their favorites', () => {
 
     cy.get('#search-button').click()
 
+    cy.url().should('include', '/results')
+
     cy.get('#cardResult-00').click()
 
     cy.get('#toggleFavorite').click()

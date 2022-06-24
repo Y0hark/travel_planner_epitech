@@ -1,14 +1,16 @@
 <template>
 	<v-app>
-	<div class="bgimage"
-		:style="{ 'background-image': `url(${landscape})`}">
-		<nav-bar />
-		<v-main>
-			<v-container>
-				<Nuxt />
-			</v-container>
-		</v-main>
-				</div>
+		<div
+			class="bgimage"
+			:style="{ 'background-image': `url(${landscape})` }"
+		>
+			<nav-bar />
+			<v-main>
+				<v-container>
+					<Nuxt />
+				</v-container>
+			</v-main>
+		</div>
 	</v-app>
 </template>
 
@@ -22,25 +24,21 @@ export default {
 		return {
 			landscape: landscape,
 		}
-	}
+	},
 }
 </script>
 
 <style>
-
 .bgimage {
-
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 100vh;
-	width: 100vw;
-	position: relative;
-	overflow: hidden;
-	}
-
-::-webkit-scrollbar {
-display: none;
+	background-attachment: fixed;
+	min-width: 100vw;
+	min-height: 100vh;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
 </style>

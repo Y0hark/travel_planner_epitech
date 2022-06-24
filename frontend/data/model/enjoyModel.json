@@ -1,0 +1,342 @@
+{
+  "location_id": "230677",
+  "name": "Basilique Notre-Dame de la Garde",
+  "latitude": "43.283924",
+  "longitude": "5.371221",
+  "num_reviews": "13340",
+  "timezone": "Europe/Paris",
+  "location_string": "Marseille, Bouches-du-Rhone, Provence-Alpes-Côte d'Azur",
+  "photo": {
+    "images": {
+      "small": {
+        "width": "150",
+        "url": "https://media-cdn.tripadvisor.com/media/photo-l/0d/65/c9/5f/vue-interieur.jpg",
+        "height": "150"
+      },
+      "thumbnail": {
+        "width": "50",
+        "url": "https://media-cdn.tripadvisor.com/media/photo-t/0d/65/c9/5f/vue-interieur.jpg",
+        "height": "50"
+      },
+      "original": {
+        "width": "800",
+        "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/65/c9/5f/vue-interieur.jpg",
+        "height": "771"
+      },
+      "large": {
+        "width": "800",
+        "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/65/c9/5f/vue-interieur.jpg",
+        "height": "771"
+      },
+      "medium": {
+        "width": "467",
+        "url": "https://media-cdn.tripadvisor.com/media/photo-s/0d/65/c9/5f/vue-interieur.jpg",
+        "height": "450"
+      }
+    },
+    "is_blessed": false,
+    "uploaded_date": "2016-10-23T09:00:47-0400",
+    "caption": "vue intérieur",
+    "id": "224774495",
+    "helpful_votes": "7",
+    "published_date": "2016-10-23T09:00:47-0400",
+    "user": {
+      "user_id": null,
+      "member_id": "0",
+      "type": "user"
+    }
+  },
+  "awards": [{
+      "award_type": "Traveler's Choice",
+      "year": "2022",
+      "images": {
+        "small": "https://static.tacdn.com/img2/awards/TC-Color-60x60-updated-green.png",
+        "large": "https://www.tripadvisor.fr/img2/awards/TC_2014_downloadable_LL_TM.jpg"
+      },
+      "categories": [
+        "Activités"
+      ],
+      "display_name": "Travellers' Choice 2022"
+    },
+    {
+      "award_type": "CERTIFICATE_OF_EXCELLENCE",
+      "year": "2022",
+      "images": {
+        "small": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-0-5.jpg",
+        "large": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2022_fr_large-0-5.jpg"
+      },
+      "categories": [],
+      "display_name": "Attestation d'Excellence 2022"
+    },
+    {
+      "award_type": "CERTIFICATE_OF_EXCELLENCE",
+      "year": "2021",
+      "images": {
+        "small": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-0-5.jpg",
+        "large": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2021_fr_large-0-5.jpg"
+      },
+      "categories": [],
+      "display_name": "Attestation d'Excellence 2021"
+    },
+    {
+      "award_type": "CERTIFICATE_OF_EXCELLENCE",
+      "year": "2020",
+      "images": {
+        "small": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-0-5.jpg",
+        "large": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2020_fr_large-0-5.jpg"
+      },
+      "categories": [],
+      "display_name": "Attestation d'Excellence 2020"
+    },
+    {
+      "award_type": "CERTIFICATE_OF_EXCELLENCE",
+      "year": "2019",
+      "images": {
+        "small": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-0-5.jpg",
+        "large": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2019_fr_large-0-5.jpg"
+      },
+      "categories": [],
+      "display_name": "Attestation d'Excellence 2019"
+    },
+    {
+      "award_type": "CERTIFICATE_OF_EXCELLENCE",
+      "year": "2018",
+      "images": {
+        "small": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-0-5.jpg",
+        "large": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2018_fr_large-0-5.jpg"
+      },
+      "categories": [],
+      "display_name": "Attestation d'Excellence 2018"
+    },
+    {
+      "award_type": "CERTIFICATE_OF_EXCELLENCE",
+      "year": "2017",
+      "images": {
+        "small": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-0-5.jpg",
+        "large": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2017_fr_large-0-5.jpg"
+      },
+      "categories": [],
+      "display_name": "Attestation d'Excellence 2017"
+    },
+    {
+      "award_type": "CERTIFICATE_OF_EXCELLENCE",
+      "year": "2016",
+      "images": {
+        "small": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-0-5.jpg",
+        "large": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2016_fr_large-0-5.jpg"
+      },
+      "categories": [],
+      "display_name": "Attestation d'Excellence 2016"
+    },
+    {
+      "award_type": "CERTIFICATE_OF_EXCELLENCE",
+      "year": "2015",
+      "images": {
+        "small": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-0-5.jpg",
+        "large": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2015_fr_large-0-5.jpg"
+      },
+      "categories": [],
+      "display_name": "Attestation d'Excellence 2015"
+    },
+    {
+      "award_type": "CERTIFICATE_OF_EXCELLENCE",
+      "year": "2014",
+      "images": {
+        "small": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-0-5.jpg",
+        "large": "https://www.tripadvisor.fr/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2014_fr_large-0-5.jpg"
+      },
+      "categories": [],
+      "display_name": "Attestation d'Excellence 2014"
+    }
+  ],
+  "location_subtype": "none",
+  "doubleclick_zone": "eu.france.provence.marseille",
+  "preferred_map_engine": "default",
+  "raw_ranking": "5.0",
+  "ranking_geo": "Marseille",
+  "ranking_geo_id": "187253",
+  "ranking_position": "1",
+  "ranking_denominator": "263",
+  "ranking_category": "attraction",
+  "ranking_subcategory": "Nº 1 sur 263 choses à voir/à faire à Marseille",
+  "subcategory_ranking": "Nº 1 sur 263 choses à voir/à faire à Marseille",
+  "ranking": "Nº 1 sur 263 choses à voir/à faire à Marseille",
+  "distance": null,
+  "distance_string": null,
+  "bearing": null,
+  "rating": "4.5",
+  "is_closed": false,
+  "open_now_text": "Ouvert",
+  "is_long_closed": false,
+  "description": "La Basilique Notre-Dame de la Garde est une icône Marseillaise. De son perchoir, elle veille sur le port et la ville. Visitez la Basilique pour une vue imprenable sur Marseille et faites un tour au Musée d’Art Sacré pour en apprendre plus sur l’histoire de ce site historique.",
+  "web_url": "https://www.tripadvisor.fr/Attraction_Review-g187253-d230677-Reviews-Basilique_Notre_Dame_de_la_Garde-Marseille_Bouches_du_Rhone_Provence_Alpes_Cote_d_.html",
+  "write_review": "https://www.tripadvisor.fr/UserReview-g187253-d230677-Basilique_Notre_Dame_de_la_Garde-Marseille_Bouches_du_Rhone_Provence_Alpes_Cote_d_Azur.html",
+  "ancestors": [{
+      "subcategory": [{
+        "key": "city",
+        "name": "Ville"
+      }],
+      "name": "Marseille",
+      "abbrv": null,
+      "location_id": "187253"
+    },
+    {
+      "subcategory": [{
+        "key": "department",
+        "name": "Département"
+      }],
+      "name": "Bouches-du-Rhone",
+      "abbrv": null,
+      "location_id": "2349651"
+    },
+    {
+      "subcategory": [{
+        "key": "region",
+        "name": "Région"
+      }],
+      "name": "Provence-Alpes-Côte d'Azur",
+      "abbrv": null,
+      "location_id": "187208"
+    },
+    {
+      "subcategory": [{
+        "key": "country",
+        "name": "Pays"
+      }],
+      "name": "France",
+      "abbrv": null,
+      "location_id": "187070"
+    }
+  ],
+  "category": {
+    "key": "attraction",
+    "name": "Activité"
+  },
+  "subcategory": [{
+    "key": "47",
+    "name": "Sites touristiques"
+  }],
+  "parent_display_name": "Marseille",
+  "is_jfy_enabled": false,
+  "nearest_metro_station": [],
+  "phone": "+33 4 91 13 40 80",
+  "website": "http://www.notredamedelagarde.com/",
+  "email": "contact@notredamedelagarde.com",
+  "address_obj": {
+    "street1": "Rue Fort-du-Sanctuaire",
+    "street2": "",
+    "city": "Marseille",
+    "state": null,
+    "country": "France",
+    "postalcode": "13281"
+  },
+  "address": "Rue Fort-du-Sanctuaire, 13281 Marseille France",
+  "hours": {
+    "week_ranges": [
+      [{
+        "open_time": 420,
+        "close_time": 1095
+      }],
+      [{
+        "open_time": 420,
+        "close_time": 1095
+      }],
+      [{
+        "open_time": 420,
+        "close_time": 1095
+      }],
+      [{
+        "open_time": 420,
+        "close_time": 1095
+      }],
+      [{
+        "open_time": 420,
+        "close_time": 1095
+      }],
+      [{
+        "open_time": 420,
+        "close_time": 1095
+      }],
+      [{
+        "open_time": 420,
+        "close_time": 1095
+      }]
+    ],
+    "timezone": "Europe/Paris"
+  },
+  "is_candidate_for_contact_info_suppression": false,
+  "subtype": [{
+    "key": "10",
+    "name": "Sites sacrés et religieux"
+  }],
+  "booking": {
+    "provider": "Viator",
+    "url": "https://www.tripadvisor.fr/Commerce?url=https%3A%2F%2Fwww.viatorcom.fr%2Ffr%2F7379%2FMarseille-attractions%2FBasilique-Notre-Dame-de-la-Garde-Visite-a-Marseille-tours-tickets%2Fd485-a2740%3Feap%3Dmobile-app-11383%26aid%3Dtripfrandr&partnerKey=1&urlKey=dd84fa1c5c363c229&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=TOP&slot=1&cnt=1&geo=230677&clt=TM&from=api&nt=true"
+  },
+  "offer_group": {
+    "lowest_price": "5,79€",
+    "offer_list": [{
+        "url": "https://www.tripadvisor.fr/Commerce?url=https%3A%2F%2Fwww.viatorcom.fr%2Ffr%2F7379%2Ftours%2FMarseille%2FMarseille-Shore-Excursion-City-Sightseeing-Small-Group-Tour-of-Marseille%2Fd485-31494P16%3Feap%3Dmobile-app-11383%26aid%3Dtripfrandr&partnerKey=1&urlKey=0a36c5c7b0a31f12a&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=1&cnt=1&geo=230677&clt=TM&from=api&nt=true",
+        "price": "66,67€",
+        "rounded_up_price": "67€",
+        "offer_type": "",
+        "title": "Visite touristique de Marseille en bord de mer, en petit groupe, d’une demi-journée",
+        "product_code": "31494P16",
+        "partner": "Viator",
+        "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/0a/aa/98/8b.jpg",
+        "description": null,
+        "primary_category": "Croisières cabotage"
+      },
+      {
+        "url": "https://www.tripadvisor.fr/Commerce?url=https%3A%2F%2Fwww.viatorcom.fr%2Ffr%2F7379%2Ftours%2FMarseille%2FMarseille-Shore-Excursion-Half-Day-Tour-of-Marseille-by-Electric-Bike%2Fd485-6048P7%3Feap%3Dmobile-app-11383%26aid%3Dtripfrandr&partnerKey=1&urlKey=8d2f0af153e77cc5c&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=2&cnt=1&geo=230677&clt=TM&from=api&nt=true",
+        "price": "69,00€",
+        "rounded_up_price": "69€",
+        "offer_type": "",
+        "title": "Tour de Marseille en vélo électrique avec prise en charge du port",
+        "product_code": "6048P7",
+        "partner": "Viator",
+        "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/06/71/d6/69.jpg",
+        "description": null,
+        "primary_category": "Croisières cabotage"
+      },
+      {
+        "url": "https://www.tripadvisor.fr/Commerce?url=https%3A%2F%2Fwww.viatorcom.fr%2Ffr%2F7379%2Ftours%2FMarseille%2FMarseille-Electric-Bike-Tour%2Fd485-6048MARSEILLEBIKE%3Feap%3Dmobile-app-11383%26aid%3Dtripfrandr&partnerKey=1&urlKey=a40956d63019fadb5&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=3&cnt=1&geo=230677&clt=TM&from=api&nt=true",
+        "price": "32,00€",
+        "rounded_up_price": "32€",
+        "offer_type": "",
+        "title": "La ville de Marseille et la côte touristique en vélo électrique en petit groupe",
+        "product_code": "6048MARSEILLEBIKE",
+        "partner": "Viator",
+        "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/06/71/d6/59.jpg",
+        "description": null,
+        "primary_category": "Visites en vélo et VTT"
+      },
+      {
+        "url": "https://www.tripadvisor.fr/Commerce?url=https%3A%2F%2Fwww.viatorcom.fr%2Ffr%2F7379%2Ftours%2FCassis%2FMarseille-Shore-Excursion-Marseille-and-Cassis-Tour%2Fd50415-3547PRTMRSPTM10%3Feap%3Dmobile-app-11383%26aid%3Dtripfrandr&partnerKey=1&urlKey=deeb0b5078f68f0ab&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=4&cnt=1&geo=230677&clt=TM&from=api&nt=true",
+        "price": "116,72€",
+        "rounded_up_price": "117€",
+        "offer_type": "",
+        "title": "Marseille Shore Excursion: Marseille et Cassis",
+        "product_code": "3547PRTMRSPTM10",
+        "partner": "Viator",
+        "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/06/71/08/1d.jpg",
+        "description": null,
+        "primary_category": "Croisières cabotage"
+      },
+      {
+        "url": "https://www.tripadvisor.fr/Commerce?url=https%3A%2F%2Fwww.viatorcom.fr%2Ffr%2F7379%2Ftours%2FMarseille%2FProvence-Sightseeing-Tour-Marseille-and-Cassis-Calanques-Cruise%2Fd485-3547MARSEILLECASSIS%3Feap%3Dmobile-app-11383%26aid%3Dtripfrandr&partnerKey=1&urlKey=4840176959eab3a10&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=5&cnt=1&geo=230677&clt=TM&from=api&nt=true",
+        "price": "70,00€",
+        "rounded_up_price": "70€",
+        "offer_type": "",
+        "title": "Visite de la Provence avec Marseille et mise à niveau de la croisière",
+        "product_code": "3547MARSEILLECASSIS",
+        "partner": "Viator",
+        "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/06/71/07/df.jpg",
+        "description": null,
+        "primary_category": "Excursions à la demi-journée"
+      }
+    ],
+    "has_see_all_url": true,
+    "is_eligible_for_ap_list": true
+  }
+}

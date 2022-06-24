@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<h2>Favorites page</h2>
 		<ResultComponent
 			v-for="(result, index) in favorites"
 			:key="index"

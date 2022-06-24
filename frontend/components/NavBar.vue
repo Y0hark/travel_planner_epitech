@@ -7,7 +7,13 @@
 
 			<v-spacer></v-spacer>
 
-			<v-btn id="favorites-link" icon nuxt to="/favorites">
+			<v-btn
+				id="favorites-link"
+				color="primary"
+				icon
+				nuxt
+				to="/favorites"
+			>
 				<v-icon>mdi-heart</v-icon>
 			</v-btn>
 		</v-toolbar>
