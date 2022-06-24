@@ -39,36 +39,42 @@
 				hide-details
 				placeholder="Do we go to Alaska or Hawaii?"
 			></v-autocomplete>
+			<v-checkbox label="Enjoy" v-model="enjoy"></v-checkbox>
 			<template>
-    <div class="text-center">
-        <v-menu offset-y :close-on-content-click=false>
-            <template v-slot:activator="{ on, attrs }">
-                <v-btn color="primary" v-bind="attrs" v-on="on" icon>
-                    <v-icon>mdi-calendar</v-icon>
-                </v-btn>
-            </template>
-            <v-list>
-                <v-list-item>
-                    <template>
-                        <v-row>
-                            <v-col cols="12" sm="6">
-                                <v-date-picker
-                                    v-model="dates"
-                                    range
-                                ></v-date-picker>
-                            </v-col>
-                            <v-col cols="12" sm="6">
-                                <v-text-field
-                                    v-model="dateRangeText"
-                                    label="Date range"
-                                    prepend-icon="mdi-calendar"
-                                    readonly
-                                ></v-text-field>
-                            </v-col>
-                        </v-row> </template></v-list-item></v-list
-        ></v-menu>
-    </div>
-</template>
+				<div class="text-center">
+					<v-menu offset-y :close-on-content-click="false">
+						<template v-slot:activator="{ on, attrs }">
+							<v-btn
+								color="primary"
+								v-bind="attrs"
+								v-on="on"
+								icon
+							>
+								<v-icon>mdi-calendar</v-icon>
+							</v-btn>
+						</template>
+						<v-list>
+							<v-list-item>
+								<template>
+									<v-row>
+										<v-col cols="12" sm="6">
+											<v-date-picker
+												v-model="dates"
+												range
+											></v-date-picker>
+										</v-col>
+										<v-col cols="12" sm="6">
+											<v-text-field
+												v-model="dateRangeText"
+												label="Date range"
+												prepend-icon="mdi-calendar"
+												readonly
+											></v-text-field>
+										</v-col>
+									</v-row> </template></v-list-item></v-list
+					></v-menu>
+				</div>
+			</template>
 			<v-btn id="search-button" icon @click="search">
 				<v-icon>mdi-magnify</v-icon>
 			</v-btn>
@@ -77,12 +83,15 @@
 </template>
 
 <script>
+import Api from '../services/api.js'
+
 export default {
 	name: 'homePage',
 	data() {
 		return {
 			// TODO: Samuel GALIERE need to change this to a dynamic value
 			dates: ['2019-09-10', '2019-09-20'],
+			enjoy: false,
 			items: [
 				'Alabama',
 				'Alaska',
@@ -136,10 +145,10 @@ export default {
 	computed: {
 		dateRangeText() {
 			return this.dates.join(' - ')
-		}
+		},
 	},
 	methods: {
-		search() {
+		async search() {
 			try {
 				if (this.selected != '') {
 					// renvoie une liste de tous les voyages pour la destination selectionnée
@@ -156,6 +165,13 @@ export default {
 					this.$router.push({
 						name: 'results',
 					})
+				} else {
+					if (this.enjoy) {
+						localStorage.setItem(
+							'apiResults',
+							JSON.stringify(await Api.enjoy())
+						)
+					}
 				}
 			} catch (error) {
 				console.error(error)

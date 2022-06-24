@@ -5,6 +5,7 @@
 			v-for="(result, index) in favorites"
 			:key="index"
 			:result="result"
+			:id="'cardFav-0' + index"
 		/>
 	</div>
 </template>

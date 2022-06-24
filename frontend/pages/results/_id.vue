@@ -7,7 +7,7 @@
 			<v-card-text>
 				{{ result.country }}
 				{{ result.price }}
-				<v-btn icon @click="toggleFavorite">
+				<v-btn id="toggleFavorite" icon @click="toggleFavorite">
 					<v-icon>mdi-heart</v-icon>
 				</v-btn>
 			</v-card-text>
