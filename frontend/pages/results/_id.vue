@@ -1,12 +1,17 @@
 <template>
 	<div>
-		<h2>This is a detailed result</h2>
-		<h3>{{ result.city }}</h3>
-		{{ result.country }}
-		{{ result.price }}
-		<v-btn icon @click="toggleFavorite">
-			<v-icon>mdi-heart</v-icon>
-		</v-btn>
+		<v-card>
+			<v-card-title primary-title>
+				<h3>{{ result.city }}</h3>
+			</v-card-title>
+			<v-card-text>
+				{{ result.country }}
+				{{ result.price }}
+				<v-btn icon @click="toggleFavorite">
+					<v-icon>mdi-heart</v-icon>
+				</v-btn>
+			</v-card-text>
+		</v-card>
 	</div>
 </template>
 <script>

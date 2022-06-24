@@ -9,34 +9,24 @@
 				<p class="Price">{{ result.price }}</p>
 			</v-card-text>
 		</v-card> -->
-	<v-card>
-            <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
-              class="white--text align-end"
-              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="200px"
-            >
-              <v-card-title v-text="result.city"></v-card-title>
-            </v-img>
+		<v-card elevation="2" @click="displayResult">
+			<v-img
+				src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
+				class="white--text align-end"
+				gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+				height="200px"
+			>
+				<v-card-title v-text="result.city"></v-card-title>
+			</v-img>
 
-            <v-card-actions>
-              <v-spacer></v-spacer>
+			<v-card-actions>
+				<v-spacer></v-spacer>
 
-              <v-btn icon>
-                <v-icon>mdi-heart</v-icon>
-              </v-btn>
-
-              <v-btn icon>
-                <v-icon>mdi-bookmark</v-icon>
-              </v-btn>
-
-              <v-btn icon>
-                <v-icon>mdi-share-variant</v-icon>
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-	
-	
+				<v-btn icon>
+					<v-icon>mdi-heart</v-icon>
+				</v-btn>
+			</v-card-actions>
+		</v-card>
 	</div>
 </template>
 <script>
@@ -59,13 +49,12 @@ export default {
 }
 </script>
 <style>
-
 .Pcolor {
-	color: #00BBAD;
+	color: #00bbad;
 }
 
 .Scolor {
-	color: #4A8179;
+	color: #4a8179;
 }
 
 .Price {
@@ -75,7 +64,5 @@ export default {
 
 .btn {
 	float: right;
-	
 }
-
 </style>
