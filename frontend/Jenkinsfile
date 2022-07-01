@@ -28,9 +28,11 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-				echo 'No tests implemented yet: skipping tests.'
-            }
-        }
+				sh 'cd frontend/ && npm run dev'
+				sh 'cd frontend/ && npx cypress run'
+				echo 'Testing completed successfully.'
+			}
+		}
         stage('Deployment') {
             steps {
                 echo 'Deploying...'
