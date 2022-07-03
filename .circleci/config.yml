@@ -6,11 +6,10 @@ orbs:
 workflows:
   std-cicd-pathing:
     jobs:
-      build:
-        working_directory: /frontend
-        run: npm ci
-        run: npm run build
+      - build:
+          working_directory: /frontend
+          run: npm ci && npm run build
 
-      test:
-        working_directory: /frontend
-        - cypress/run
+      - test:
+         working_directory: /frontend
+          - cypress/run
