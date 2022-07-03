@@ -1,0 +1,16 @@
+version: 2.1
+
+orbs: 
+  cypress: cypress-io/cypress@2.0.0
+
+workflows:
+  std-cicd-pathing:
+    jobs:
+      build:
+        working_directory: /frontend
+        run: npm ci
+        run: npm run build
+
+      test:
+        working_directory: /frontend
+        - cypress/run
