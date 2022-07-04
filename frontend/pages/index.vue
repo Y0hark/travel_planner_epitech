@@ -22,25 +22,20 @@
 				<v-btn color="primary" @click="search">Search</v-btn>
 			</v-card-actions> 
 		</v-card> -->
-		<v-toolbar>
+		<v-toolbar class="mb-1">
 			<v-toolbar-title>Find a wonderful place to got to!</v-toolbar-title>
-			<v-autocomplete
+			<v-text-field
 				id="arrival-location-search-input"
-				:items="items"
-				v-model="selected"
-				cache-items
+				v-model="location"
 				rounded
 				clearable
-				auto-select-first
 				filled
 				dense
 				class="mx-4"
-				hide-no-data
 				hide-details
 				placeholder="Do we go to Alaska or Hawaii?"
-			></v-autocomplete>
-			<v-checkbox label="Enjoy" v-model="enjoy"></v-checkbox>
-			<template>
+			></v-text-field>
+			<!-- <template>
 				<div class="text-center">
 					<v-menu offset-y :close-on-content-click="false">
 						<template v-slot:activator="{ on, attrs }">
@@ -74,11 +69,35 @@
 									</v-row> </template></v-list-item></v-list
 					></v-menu>
 				</div>
-			</template>
+			</template> -->
 			<v-btn id="search-button" icon @click="search">
 				<v-icon>mdi-magnify</v-icon>
 			</v-btn>
 		</v-toolbar>
+		<v-toolbar>
+			<span>Pick up a plan</span>
+			<v-spacer></v-spacer>
+			<v-radio-group v-model="plan" row class="pt-5">
+				<v-radio
+					v-for="(endpoint, index) in endpoints"
+					:key="index"
+					:label="endpoint.name"
+					:value="endpoint.value"
+				></v-radio>
+			</v-radio-group>
+			<v-spacer></v-spacer>
+		</v-toolbar>
+		<v-alert
+			v-if="error"
+			class="alert-bar"
+			color="pink"
+			dark
+			border="bottom"
+			icon="mdi-alert-circle"
+			transition="scale-transition"
+		>
+			{{ alertMessage }}
+		</v-alert>
 	</div>
 </template>
 
@@ -92,55 +111,18 @@ export default {
 		return {
 			// TODO: Samuel GALIERE need to change this to a dynamic value
 			dates: ['2019-09-10', '2019-09-20'],
-			enjoy: false,
-			items: [
-				'Alabama',
-				'Alaska',
-				'Arizona',
-				'Arkansas',
-				'California',
-				'Colorado',
-				'Connecticut',
-				'Delaware',
-				'Florida',
-				'Georgia',
-				'Hawaii',
-				'Idaho',
-				'Illinois',
-				'Indiana',
-				'Iowa',
-				'Kansas',
-				'Kentucky',
-				'Louisiana',
+			location: '',
+			plan: '',
+			error: false,
+			alertMessage: '',
+			endpoints: [
+				{ name: 'Enjoy', value: 'enjoy' },
+				{ name: 'Sleep', value: 'sleep' },
+				{ name: 'Local', value: 'local' },
+				{ name: 'Travel', value: 'travel' },
+				{ name: 'Eat', value: 'eat' },
+				{ name: 'Drink', value: 'drink' },
 			],
-			response: [
-				{ city: 'Alabama', country: 'USA', price: '$100' },
-				{ city: 'Alaska', country: 'USA', price: '$200' },
-				{ city: 'Arizona', country: 'USA', price: '$300' },
-				{ city: 'Arkansas', country: 'USA', price: '$400' },
-				{ city: 'California', country: 'USA', price: '$500' },
-				{ city: 'Colorado', country: 'USA', price: '$600' },
-				{ city: 'Connecticut', country: 'USA', price: '$700' },
-				{ city: 'Delaware', country: 'USA', price: '$800' },
-				{ city: 'Florida', country: 'USA', price: '$900' },
-				{ city: 'Georgia', country: 'USA', price: '$1000' },
-				{ city: 'Hawaii', country: 'USA', price: '$1100' },
-				{ city: 'Idaho', country: 'USA', price: '$1200' },
-				{ city: 'Illinois', country: 'USA', price: '$1300' },
-				{ city: 'Indiana', country: 'USA', price: '$1400' },
-				{ city: 'Iowa', country: 'USA', price: '$1500' },
-				{ city: 'Kansas', country: 'USA', price: '$1600' },
-				{ city: 'Kentucky', country: 'USA', price: '$1700' },
-				{ city: 'Louisiana', country: 'USA', price: '$1800' },
-				{ city: 'Maine', country: 'USA', price: '$1900' },
-				{ city: 'Maryland', country: 'USA', price: '$2000' },
-				{ city: 'Massachusetts', country: 'USA', price: '$2100' },
-				{ city: 'Michigan', country: 'USA', price: '$2200' },
-				{ city: 'Minnesota', country: 'USA', price: '$2300' },
-				{ city: 'Mississippi', country: 'USA', price: '$2400' },
-				{ city: 'Missouri', country: 'USA', price: '$2500' },
-			],
-			selected: '',
 		}
 	},
 	computed: {
@@ -151,36 +133,97 @@ export default {
 	methods: {
 		async search() {
 			try {
-				if (this.selected != '') {
-					// renvoie une liste de tous les voyages pour la destination selectionnée
-					const apiResultsArray = this.response.filter(
-						(item) => item.city === this.selected
-					)
+				if (this.location === '') {
+					throw new Error('Please enter a location')
+				}
+				if (this.plan === '') {
+					throw new Error('Please select a plan')
+				}
+				switch (this.plan) {
+					case 'enjoy':
+						// TODO: @Samuel_GALIERE needs to change to real API value when API is ready
+						// code is ready: just need to uncomment the lines below
 
-					// creation des variables de stockage des données dans le localStorage
-					localStorage.setItem(
-						'apiResultsArray',
-						JSON.stringify(apiResultsArray)
-					)
-
-					this.$router.push({
-						name: 'results',
-					})
-				} else {
-					if (this.enjoy) {
 						// localStorage.setItem(
 						// 	'apiResults',
-						// 	JSON.stringify(await Api.enjoy())
+						// 	JSON.stringify((await Api.enjoy()).data)
 						// )
-						localStorage.setItem('apiResults', JSON.stringify(data))
 
-						this.$router.push({
-							name: 'results',
-						})
-					}
+						localStorage.setItem('apiResults', JSON.stringify(data))
+						break
+
+					case 'sleep':
+						// TODO: @Samuel_GALIERE needs to change to real API value when API is ready
+						// code is ready: just need to uncomment the lines below
+
+						// localStorage.setItem(
+						// 	'apiResults',
+						// 	JSON.stringify((await Api.sleep()).data)
+						// )
+
+						localStorage.setItem('apiResults', JSON.stringify(data))
+						break
+
+					case 'local':
+						// TODO: @Samuel_GALIERE needs to change to real API value when API is ready
+						// code is ready: just need to uncomment the lines below
+
+						// localStorage.setItem(
+						// 	'apiResults',
+						// 	JSON.stringify(
+						// 		(await Api.local(this.location)).data.results
+						// 	)
+						// )
+
+						localStorage.setItem('apiResults', JSON.stringify(data))
+						break
+
+					case 'travel':
+						// TODO: @Samuel_GALIERE needs to change to real API value when API is ready
+						// code is ready: just need to uncomment the lines below
+
+						// localStorage.setItem(
+						// 	'apiResults',
+						// 	JSON.stringify((await Api.travel()).data)
+						// )
+
+						localStorage.setItem('apiResults', JSON.stringify(data))
+						break
+
+					case 'eat':
+						// TODO: @Samuel_GALIERE needs to change to real API value when API is ready
+						// code is ready: just need to uncomment the lines below
+
+						// localStorage.setItem(
+						// 	'apiResults',
+						// 	JSON.stringify((await Api.eat()).data)
+						// )
+
+						localStorage.setItem('apiResults', JSON.stringify(data))
+						break
+
+					case 'drink':
+						// TODO: @Samuel_GALIERE needs to change to real API value when API is ready
+						// code is ready: just need to uncomment the lines below
+
+						// localStorage.setItem(
+						// 	'apiResults',
+						// 	JSON.stringify((await Api.drink()).data)
+						// )
+
+						localStorage.setItem('apiResults', JSON.stringify(data))
+						break
+
+					default:
+						break
 				}
+				this.$router.push('/results')
 			} catch (error) {
-				console.error(error)
+				this.error = true
+				this.alertMessage = error.message
+				setTimeout(() => {
+					this.error = false
+				}, 3000)
 			}
 		},
 		displayCalendar() {
@@ -196,3 +239,12 @@ export default {
 	},
 }
 </script>
+<style scoped>
+.alert-bar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+}
+</style>

@@ -20,11 +20,16 @@
 			</v-img>
 
 			<v-card-actions>
+				{{ isClosed }}
 				<v-spacer></v-spacer>
 
-				<v-btn icon>
-					<v-icon>mdi-heart</v-icon>
-				</v-btn>
+				<v-rating
+					readonly
+					half-increments
+					length="5"
+					size="32"
+					:value="Number(result.rating)"
+				></v-rating>
 			</v-card-actions>
 		</v-card>
 	</div>
@@ -50,6 +55,7 @@ export default {
 		return {
 			image: '',
 			noImgFlag: false,
+			isClosed: this.result.is_closed ? 'Fermé' : 'Ouvert',
 		}
 	},
 	mounted() {

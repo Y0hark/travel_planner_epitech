@@ -1,44 +1,58 @@
 <template>
 	<div>
 		<v-card>
-			<v-card-title primary-title>
-				<h3>{{ result.name }}</h3>
+			<v-card-title primary-title class="text-h3">
+				<span>{{ result.name }}</span>
+				<v-spacer></v-spacer>
+				<v-rating
+					readonly
+					half-increments
+					length="5"
+					size="32"
+					:value="Number(result.rating)"
+				></v-rating>
+				<v-spacer></v-spacer>
+				<v-tooltip left>
+					<template v-slot:activator="{ on, attrs }">
+						<v-btn
+							id="toggleFavorite"
+							color="primary"
+							icon
+							alt
+							v-bind="attrs"
+							v-on="on"
+							@click="toggleFavorite"
+						>
+							<v-icon>mdi-cards-heart</v-icon>
+						</v-btn>
+					</template>
+					<span>Ajouter un favori</span>
+				</v-tooltip>
 			</v-card-title>
 			<v-card-text>
-				<span>Localisation :</span> {{ result.location_string }}
+				<span class="text-h6">Localisation :</span>
+				{{ result.location_string }}
 			</v-card-text>
 			<v-card-text>
-				<span>Description :</span> {{ result.description }}
+				<span class="text-h6">Description :</span>
+				{{ result.description }}
 			</v-card-text>
 			<v-card-text>
-				<span>Adresse :</span> {{ result.address }}
+				<span class="text-h6">Adresse :</span> {{ result.address }}
 			</v-card-text>
-			<v-card-text>
+			<v-card-text align="center">
 				<v-img
 					:src="result.photo.images.original.url"
 					class="my-2"
 				></v-img>
+				<span class="text-h6">Récompenses: </span>
 				<AwardComponent
 					v-for="(award, index) in result.awards"
 					:key="index"
 					:award="award"
 					class="ma-2"
 				/>
-				<v-rating
-					half-increments
-					length="5"
-					size="32"
-					:value="Number(result.rating)"
-				></v-rating>
-				<span>{{ is_closed }}</span>
-				<v-btn
-					id="toggleFavorite"
-					color="primary"
-					icon
-					@click="toggleFavorite"
-				>
-					<v-icon>mdi-heart</v-icon>
-				</v-btn>
+				<span class="text-h6 d-block">{{ is_closed }}</span>
 			</v-card-text>
 		</v-card>
 	</div>
@@ -86,5 +100,5 @@ export default {
 	},
 }
 </script>
-<style>
+<style scoped>
 </style>

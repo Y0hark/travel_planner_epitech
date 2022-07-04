@@ -1,0 +1,494 @@
+{
+  "data": {
+    "Typeahead_autocomplete": {
+      "__typename": "Typeahead_Response",
+      "resultsId": "37bab94e-b2fd-416e-add0-affab585a49f_a24b906f-7fc0-48de-abae-7a431740163d",
+      "results": [{
+          "__typename": "Typeahead_LocationItem",
+          "documentId": "187147",
+          "detailsV2": {
+            "__typename": "LocationSelection_LocationInformationV2",
+            "locationId": 187147,
+            "isGeo": true,
+            "placeType": "CITY",
+            "names": {
+              "__typename": "LocationSelection_LocationNames",
+              "name": "Paris",
+              "longOnlyHierarchyTypeaheadV2": "Île-de-France, France"
+            },
+            "geocode": {
+              "__typename": "LocationSelection_LocationInformationV2Geocode",
+              "latitude": 48.857037,
+              "longitude": 2.349401
+            },
+            "contact": {
+              "__typename": "LocationSelection_LocationInformationV2Contact",
+              "streetAddress": {
+                "__typename": "LocationSelection_Address",
+                "street1": null
+              }
+            },
+            "route": {
+              "__typename": "Routing_Route",
+              "fragment": null,
+              "page": "Tourism",
+              "url": "/Tourism-g187147-Paris_Ile_de_France-Vacations.html",
+              "nonCanonicalUrl": "/Tourism-g187147-Paris_Ile_de_France-Vacations.html",
+              "typedParams": {
+                "__typename": "Routing_TourismParameters",
+                "geoId": 187147
+              }
+            }
+          },
+          "details": {
+            "__typename": "LocationInformation",
+            "socialStatistics": {
+              "__typename": "SocialStatistics",
+              "isSaved": false
+            }
+          },
+          "image": {
+            "__typename": "PrimaryMedia_PrimaryMedia",
+            "photo": {
+              "__typename": "Photo",
+              "photoSizeDynamic": {
+                "__typename": "PhotoSizeDynamic",
+                "maxHeight": 3713,
+                "maxWidth": 2970,
+                "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c2/86/0e/caption.jpg?w={width}&h={height}&s=1"
+              },
+              "photoSizes": [{
+                  "__typename": "PhotoSize",
+                  "height": 0,
+                  "width": 0,
+                  "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c2/86/0e/caption.jpg?w=100&h=100&s=1"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 50,
+                  "width": 50,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-t/1c/c2/86/0e/caption.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 150,
+                  "width": 150,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-l/1c/c2/86/0e/caption.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 205,
+                  "width": 164,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-f/1c/c2/86/0e/caption.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 200,
+                  "width": 180,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-i/1c/c2/86/0e/caption.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 450,
+                  "width": 360,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-s/1c/c2/86/0e/caption.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 688,
+                  "width": 550,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-p/1c/c2/86/0e/caption.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 1280,
+                  "width": 1024,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/c2/86/0e/caption.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 1280,
+                  "width": 1024,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-w/1c/c2/86/0e/caption.jpg"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "__typename": "Typeahead_LocationItem",
+          "documentId": "2442595",
+          "detailsV2": {
+            "__typename": "LocationSelection_LocationInformationV2",
+            "locationId": 2442595,
+            "isGeo": false,
+            "placeType": "EATERY",
+            "names": {
+              "__typename": "LocationSelection_LocationNames",
+              "name": "Le Paris London",
+              "longOnlyHierarchyTypeaheadV2": "Paris, Île-de-France, France"
+            },
+            "geocode": {
+              "__typename": "LocationSelection_LocationInformationV2Geocode",
+              "latitude": 48.869972,
+              "longitude": 2.325168
+            },
+            "contact": {
+              "__typename": "LocationSelection_LocationInformationV2Contact",
+              "streetAddress": {
+                "__typename": "LocationSelection_Address",
+                "street1": "16 place Madeleine"
+              }
+            },
+            "route": null
+          },
+          "details": {
+            "__typename": "LocationInformation",
+            "socialStatistics": {
+              "__typename": "SocialStatistics",
+              "isSaved": false
+            }
+          },
+          "image": {
+            "__typename": "PrimaryMedia_PrimaryMedia",
+            "photo": {
+              "__typename": "Photo",
+              "photoSizeDynamic": {
+                "__typename": "PhotoSizeDynamic",
+                "maxHeight": 2048,
+                "maxWidth": 2048,
+                "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/f2/ae/52/photo2jpg.jpg?w={width}&h={height}&s=1"
+              },
+              "photoSizes": [{
+                  "__typename": "PhotoSize",
+                  "height": 0,
+                  "width": 0,
+                  "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/f2/ae/52/photo2jpg.jpg?w=100&h=100&s=1"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 50,
+                  "width": 50,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-t/15/f2/ae/52/photo2jpg.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 150,
+                  "width": 150,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-l/15/f2/ae/52/photo2jpg.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 200,
+                  "width": 180,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-i/15/f2/ae/52/photo2jpg.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 205,
+                  "width": 205,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-f/15/f2/ae/52/photo2jpg.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 450,
+                  "width": 450,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-s/15/f2/ae/52/photo2jpg.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 550,
+                  "width": 550,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-p/15/f2/ae/52/photo2jpg.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 1024,
+                  "width": 1024,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-w/15/f2/ae/52/photo2jpg.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 1280,
+                  "width": 1280,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/f2/ae/52/photo2jpg.jpg"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "__typename": "Typeahead_LocationItem",
+          "documentId": "2041918",
+          "detailsV2": {
+            "__typename": "LocationSelection_LocationInformationV2",
+            "locationId": 2041918,
+            "isGeo": false,
+            "placeType": "ACCOMMODATION",
+            "names": {
+              "__typename": "LocationSelection_LocationNames",
+              "name": "Mandarin Oriental, Paris",
+              "longOnlyHierarchyTypeaheadV2": "Paris, Île-de-France, France"
+            },
+            "geocode": {
+              "__typename": "LocationSelection_LocationInformationV2Geocode",
+              "latitude": 48.866802,
+              "longitude": 2.327193
+            },
+            "contact": {
+              "__typename": "LocationSelection_LocationInformationV2Contact",
+              "streetAddress": {
+                "__typename": "LocationSelection_Address",
+                "street1": "251 rue Saint-Honoré"
+              }
+            },
+            "route": null
+          },
+          "details": {
+            "__typename": "LocationInformation",
+            "socialStatistics": {
+              "__typename": "SocialStatistics",
+              "isSaved": false
+            }
+          },
+          "image": {
+            "__typename": "PrimaryMedia_PrimaryMedia",
+            "photo": {
+              "__typename": "Photo",
+              "photoSizeDynamic": {
+                "__typename": "PhotoSizeDynamic",
+                "maxHeight": 3307,
+                "maxWidth": 4961,
+                "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/ee/a6/0d/lobby.jpg?w={width}&h={height}&s=1"
+              },
+              "photoSizes": [{
+                  "__typename": "PhotoSize",
+                  "height": 0,
+                  "width": 0,
+                  "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/ee/a6/0d/lobby.jpg?w=100&h=100&s=1"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 50,
+                  "width": 50,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-t/1b/ee/a6/0d/lobby.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 150,
+                  "width": 150,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-l/1b/ee/a6/0d/lobby.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 200,
+                  "width": 180,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-i/1b/ee/a6/0d/lobby.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 167,
+                  "width": 250,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-f/1b/ee/a6/0d/lobby.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 367,
+                  "width": 550,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ee/a6/0d/lobby.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 683,
+                  "width": 1024,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-w/1b/ee/a6/0d/lobby.jpg"
+                },
+                {
+                  "__typename": "PhotoSize",
+                  "height": 853,
+                  "width": 1280,
+                  "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/ee/a6/0d/lobby.jpg"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "__typename": "Typeahead_QuerySuggestionItem",
+          "documentId": "8e9739038c24d0182bcdabccb5ea47ed0",
+          "suggestionType": "template",
+          "buCategory": "RESTAURANTS",
+          "text": "Paris restaurants au guide MICHELIN",
+          "parentGeoDetails": {
+            "__typename": "LocationSelection_LocationInformationV2",
+            "names": {
+              "__typename": "LocationSelection_LocationNames",
+              "longOnlyHierarchyTypeaheadV2": "Île-de-France, France"
+            }
+          },
+          "route": {
+            "__typename": "Routing_Route",
+            "fragment": null,
+            "page": "Restaurants",
+            "url": "/Restaurants-g187147-zfy21964-Paris_Ile_de_France.html",
+            "nonCanonicalUrl": "/Restaurants-g187147-zfy21964-Paris_Ile_de_France.html",
+            "typedParams": {
+              "__typename": "Routing_RestaurantsParameters"
+            }
+          },
+          "scopeType": "GEO"
+        },
+        {
+          "__typename": "Typeahead_QuerySuggestionItem",
+          "documentId": "f2e33a063739cebc1a72ccc0889da8cc0",
+          "suggestionType": "template",
+          "buCategory": "RESTAURANTS",
+          "text": "Paris restaurants étoilés au Guide MICHELIN",
+          "parentGeoDetails": {
+            "__typename": "LocationSelection_LocationInformationV2",
+            "names": {
+              "__typename": "LocationSelection_LocationNames",
+              "longOnlyHierarchyTypeaheadV2": "Île-de-France, France"
+            }
+          },
+          "route": {
+            "__typename": "Routing_Route",
+            "fragment": null,
+            "page": "Restaurants",
+            "url": "/Restaurants-g187147-zfy21964-Paris_Ile_de_France.html",
+            "nonCanonicalUrl": "/Restaurants-g187147-zfy21964-Paris_Ile_de_France.html",
+            "typedParams": {
+              "__typename": "Routing_RestaurantsParameters"
+            }
+          },
+          "scopeType": "GEO"
+        },
+        {
+          "__typename": "Typeahead_QuerySuggestionItem",
+          "documentId": "79882191888673df34e7c2ff892541480",
+          "suggestionType": "template",
+          "buCategory": "RESTAURANTS",
+          "text": "Paris restaurants Assiette MICHELIN",
+          "parentGeoDetails": {
+            "__typename": "LocationSelection_LocationInformationV2",
+            "names": {
+              "__typename": "LocationSelection_LocationNames",
+              "longOnlyHierarchyTypeaheadV2": "Île-de-France, France"
+            }
+          },
+          "route": {
+            "__typename": "Routing_Route",
+            "fragment": null,
+            "page": "Restaurants",
+            "url": "/Restaurants-g187147-zfy21968-Paris_Ile_de_France.html",
+            "nonCanonicalUrl": "/Restaurants-g187147-zfy21968-Paris_Ile_de_France.html",
+            "typedParams": {
+              "__typename": "Routing_RestaurantsParameters"
+            }
+          },
+          "scopeType": "GEO"
+        },
+        {
+          "__typename": "Typeahead_QuerySuggestionItem",
+          "documentId": "5f902b3cda26e3191fe4d69fd49a4d8e0",
+          "suggestionType": "template",
+          "buCategory": "RESTAURANTS",
+          "text": "Paris restaurants avec 1 étoile au Guide MICHELIN",
+          "parentGeoDetails": {
+            "__typename": "LocationSelection_LocationInformationV2",
+            "names": {
+              "__typename": "LocationSelection_LocationNames",
+              "longOnlyHierarchyTypeaheadV2": "Île-de-France, France"
+            }
+          },
+          "route": {
+            "__typename": "Routing_Route",
+            "fragment": null,
+            "page": "Restaurants",
+            "url": "/Restaurants-g187147-zfy21965-Paris_Ile_de_France.html",
+            "nonCanonicalUrl": "/Restaurants-g187147-zfy21965-Paris_Ile_de_France.html",
+            "typedParams": {
+              "__typename": "Routing_RestaurantsParameters"
+            }
+          },
+          "scopeType": "GEO"
+        },
+        {
+          "__typename": "Typeahead_QuerySuggestionItem",
+          "documentId": "40d8fe40460665c71d6ca2e97afb0fe50",
+          "suggestionType": "template",
+          "buCategory": "RESTAURANTS",
+          "text": "Paris restaurants avec 3 étoiles au Guide MICHELIN",
+          "parentGeoDetails": {
+            "__typename": "LocationSelection_LocationInformationV2",
+            "names": {
+              "__typename": "LocationSelection_LocationNames",
+              "longOnlyHierarchyTypeaheadV2": "Île-de-France, France"
+            }
+          },
+          "route": {
+            "__typename": "Routing_Route",
+            "fragment": null,
+            "page": "Restaurants",
+            "url": "/Restaurants-g187147-zfy21967-Paris_Ile_de_France.html",
+            "nonCanonicalUrl": "/Restaurants-g187147-zfy21967-Paris_Ile_de_France.html",
+            "typedParams": {
+              "__typename": "Routing_RestaurantsParameters"
+            }
+          },
+          "scopeType": "GEO"
+        },
+        {
+          "__typename": "Typeahead_QuerySuggestionItem",
+          "documentId": "bb6d067123c4546472c1d1dcfdb62d1e0",
+          "suggestionType": "template",
+          "buCategory": "RESTAURANTS",
+          "text": "Paris restaurants Bib Gourmand MICHELIN",
+          "parentGeoDetails": {
+            "__typename": "LocationSelection_LocationInformationV2",
+            "names": {
+              "__typename": "LocationSelection_LocationNames",
+              "longOnlyHierarchyTypeaheadV2": "Île-de-France, France"
+            }
+          },
+          "route": {
+            "__typename": "Routing_Route",
+            "fragment": null,
+            "page": "Restaurants",
+            "url": "/Restaurants-g187147-zfy21969-Paris_Ile_de_France.html",
+            "nonCanonicalUrl": "/Restaurants-g187147-zfy21969-Paris_Ile_de_France.html",
+            "typedParams": {
+              "__typename": "Routing_RestaurantsParameters"
+            }
+          },
+          "scopeType": "GEO"
+        },
+        {
+          "__typename": "Typeahead_QuerySuggestionItem",
+          "documentId": "c33d3a1aed800e20d2ad5f452f14d4210",
+          "suggestionType": "template",
+          "buCategory": "RESTAURANTS",
+          "text": "Paris restaurants avec 2 étoiles au Guide MICHELIN",
+          "parentGeoDetails": {
+            "__typename": "LocationSelection_LocationInformationV2",
+            "names": {
+              "__typename": "LocationSelection_LocationNames",
+              "longOnlyHierarchyTypeaheadV2": "Île-de-France, France"
+            }
+          },
+          "route": {
+            "__typename": "Routing_Route",
+            "fragment": null,
+            "page": "Restaurants",
+            "url": "/Restaurants-g187147-zfy21966-Paris_Ile_de_France.html",
+            "nonCanonicalUrl": "/Restaurants-g187147-zfy21966-Paris_Ile_de_France.html",
+            "typedParams": {
+              "__typename": "Routing_RestaurantsParameters"
+            }
+          },
+          "scopeType": "GEO"
+        }
+      ]
+    }
+  }
+}

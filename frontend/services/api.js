@@ -7,12 +7,12 @@ const TOKEN_KEY = ''
 class Http {
   constructor() {}
 
-  static async get(url, params = {}) {
-    return await axios.get(API_BASE_URL + url, { params: params })
+  static async get(endpoint, params = {}) {
+    return await axios.get(API_BASE_URL + endpoint, { params: params })
   }
 
-  static async post(url, params = {}) {
-    return await axios.post(API_BASE_URL + url, params)
+  static async post(endpoint, params = {}) {
+    return await axios.post(API_BASE_URL + endpoint, params)
   }
 }
 
@@ -20,8 +20,8 @@ export default class Api {
   constructor() {}
 
   // get ???
-  static async local() {
-    return await Http.get('local')
+  static async local(location) {
+    return await Http.get('local', { localisation: location })
   }
 
   // get activities available arround the location
@@ -31,7 +31,7 @@ export default class Api {
 
   // get hotels arround the location
   static async sleep() {
-    return await Http.get('hotel')
+    return await Http.get('sleep')
   }
 
   // get ???
