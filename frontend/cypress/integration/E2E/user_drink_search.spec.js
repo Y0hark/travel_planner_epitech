@@ -1,14 +1,13 @@
 // this is a user journey test
 // it will test how the website behaves when a user makes a basic request
-describe('User makes a research just by location', () => {
+describe('User makes a research about where to drink', () => {
   it('User makes a research just by location', () => {
     // testing behavior
     cy.visit('http://localhost:3000')
     // cy.get("#departure-location-search-input").type("Paris");
-    cy.get('#arrival-location-search-input')
-      .type('Alabama')
-      .type('{downarrow}')
-      .type('{enter}')
+    cy.get('#arrival-location-search-input').type('Marseille')
+
+    cy.get('#drink-radio-button').check({ force: true })
     // cy.get("#departure-date-input").type("2020-01-01");
     // cy.get("#return-date-input").type("2020-01-02");
     cy.get('#search-button').click()

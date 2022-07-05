@@ -77,12 +77,14 @@
 		<v-toolbar>
 			<span>Pick up a plan</span>
 			<v-spacer></v-spacer>
-			<v-radio-group v-model="plan" row class="pt-5">
+			<v-radio-group v-model="plan" row class="pt-5" id="radio-group">
 				<v-radio
+					type="radio"
 					v-for="(endpoint, index) in endpoints"
 					:key="index"
 					:label="endpoint.name"
 					:value="endpoint.value"
+					:id="endpoint.value + '-radio-button'"
 				></v-radio>
 			</v-radio-group>
 			<v-spacer></v-spacer>

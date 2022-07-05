@@ -6,10 +6,9 @@ describe('User can add and remove a travel from their favorites', () => {
     // testing behavior
     cy.visit('http://localhost:3000')
 
-    cy.get('#arrival-location-search-input')
-      .type('Alabama')
-      .type('{downarrow}')
-      .type('{enter}')
+    cy.get('#arrival-location-search-input').type('Marseille')
+
+    cy.get('#enjoy-radio-button').check({ force: true })
 
     cy.get('#search-button').click()
 
